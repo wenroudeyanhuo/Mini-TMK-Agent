@@ -1,0 +1,5 @@
+【原文 (中文)】
+你好，时空狐，我是测试员，正在测试模式二的本地文件转录功能。
+
+【翻译 (英文)】
+Hello, Time-Space Fox, I'm the tester, and I'm currently testing the local file transcription function in Mode 2.
