@@ -14,6 +14,12 @@ type ASRProvider interface {
 type LLMTranslator interface {
 	// Translate 基础文本翻译
 	Translate(ctx context.Context, text, sourceLang, targetLang string) (string, error)
+	Chat(ctx context.Context, prompt string) (string, error)
 	// TranslateStream 流式打字机翻译
 	TranslateStream(ctx context.Context, text, sourceLang, targetLang string) (<-chan string, error)
+}
+
+// TTSProvider 语音合成防腐层接口
+type TTSProvider interface {
+	Speak(ctx context.Context, text string) error
 }

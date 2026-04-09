@@ -1,0 +1,4 @@
+client_id	audio_id	audio_file	duration_ms	prompt_id	prompt	reason	comment	language
+281d5981f29edfd5e3ab384ca0ef005e	86315	spontaneous-speech-es-86315.mp3	8136	8032	¿Qué haces cuando no hay electricidad donde vives?	different_language	No es español	Spanish
+281d5981f29edfd5e3ab384ca0ef005e	86306	spontaneous-speech-es-86306.mp3	9216	8003	¿Puedes describir como luce una boda tradicional?	different_language	No es español	Spanish
+281d5981f29edfd5e3ab384ca0ef005e	86152	spontaneous-speech-es-86152.mp3	4968	9280	¿Tienes un animal de compañía?	different_language	No es idioma español	Spanish

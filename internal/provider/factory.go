@@ -25,3 +25,10 @@ func NewLLMTranslator(cfg *config.AppConfig) (LLMTranslator, error) {
 		return nil, fmt.Errorf("unsupported LLM provider: %s", cfg.LLMProvider)
 	}
 }
+
+// NewTTSProvider 创建语音合成客户端（直接复用 OpenAI 客户端的底层配置即可）
+func NewTTSProvider(apiKey, baseURL, model string) TTSProvider {
+	// 因为硅基流动的 TTS 也兼容 OpenAI 协议，所以直接复用 OpenAIClient
+	return NewOpenAICompatibleLLM(apiKey, baseURL, model).(TTSProvider)
+	// 💡 注意：如果你之前的配置里是传 config 对象，请按你之前的写法初始化 OpenAIClient
+}
